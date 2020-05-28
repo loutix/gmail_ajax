@@ -1,0 +1,17 @@
+I, [2019-05-23T22:34:00.910783 #52469]  INFO -- : [8518269b-bb37-4e6c-a495-8bdc96346a29] Started GET "/" for 127.0.0.1 at 2019-05-23 22:34:00 +0200
+I, [2019-05-23T22:34:00.917785 #52469]  INFO -- : [8518269b-bb37-4e6c-a495-8bdc96346a29] Processing by EmailsController#index as HTML
+I, [2019-05-23T22:34:00.942359 #52469]  INFO -- : [8518269b-bb37-4e6c-a495-8bdc96346a29]   Rendering emails/index.html.erb within layouts/application
+I, [2019-05-23T22:34:00.987675 #52469]  INFO -- : [8518269b-bb37-4e6c-a495-8bdc96346a29]   Rendered emails/index.html.erb within layouts/application (44.9ms)
+I, [2019-05-23T22:34:00.987907 #52469]  INFO -- : [8518269b-bb37-4e6c-a495-8bdc96346a29] Completed 500 Internal Server Error in 70ms
+F, [2019-05-23T22:34:00.990047 #52469] FATAL -- : [8518269b-bb37-4e6c-a495-8bdc96346a29]   
+F, [2019-05-23T22:34:00.990341 #52469] FATAL -- : [8518269b-bb37-4e6c-a495-8bdc96346a29] ActionView::Template::Error (FATAL:  role "todolist-app" does not exist
+):
+F, [2019-05-23T22:34:00.991148 #52469] FATAL -- : [8518269b-bb37-4e6c-a495-8bdc96346a29]     13:       </thead>
+[8518269b-bb37-4e6c-a495-8bdc96346a29]     14:       <tbody>
+[8518269b-bb37-4e6c-a495-8bdc96346a29]     15:           <tr id="emails">
+[8518269b-bb37-4e6c-a495-8bdc96346a29]     16:             <% @emails.each do |email| %>
+[8518269b-bb37-4e6c-a495-8bdc96346a29]     17:             <td>
+[8518269b-bb37-4e6c-a495-8bdc96346a29]     18:               <%= link_to email.object, email_path(email.id), method: "get", remote: true %>
+[8518269b-bb37-4e6c-a495-8bdc96346a29]     19:             </td>
+F, [2019-05-23T22:34:00.991253 #52469] FATAL -- : [8518269b-bb37-4e6c-a495-8bdc96346a29]   
+F, [2019-05-23T22:34:00.991331 #52469] FATAL -- : [8518269b-bb37-4e6c-a495-8bdc96346a29] app/views/emails/index.html.erb:16:in `_app_views_emails_index_html_erb__2083401499956552662_70149037246780'

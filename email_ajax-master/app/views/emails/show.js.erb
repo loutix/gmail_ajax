@@ -1,0 +1,5 @@
+
+<% email = params[:id] %>
+var mailChoosen = document.getElementById('body-' + <%= email %>);
+
+mailChoosen.innerHTML = "<%= j render 'email_body', email: @email %>"

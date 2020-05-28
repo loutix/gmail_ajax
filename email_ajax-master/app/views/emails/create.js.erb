@@ -1,0 +1,7 @@
+
+alert("le fichier JS create est exécuté!");
+
+document.getElementById("emails").insertAdjacentHTML("beforeend", "<%= j render 'email', email: @email %>");
+
+document.getElementByClassName("body-mail").hide();
+//document.getElementByClassName("body-mail").innerHTML = "<%= j render 'email_body', email: @email %>";
